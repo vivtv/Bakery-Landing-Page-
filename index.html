@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Bliss Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel ='stylesheet'>
+</head>
+<body>
+ <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Spring Bliss Bakery</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a><i class='bx bx-home-heart'></i></li>
+            <li><a href="#menu">Menu</a><i class='bx bx-food-menu' ></i></li>
+            <li><a href="#review">Review</a><i class='bx bx-like' ></i></li>
+            <li><a href="#about-us">About Us</a><i class='bx bx-heart' ></i></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+ <!-- HTML -->
+<section id="home" class="section home">
+    <h1 class="animate-heading">SPRING BLISS BAKERY</h1>
+    <div class="picture-home"></div>
+    <div class="pink-box-container">
+        <!-- Left Box -->
+        <div class="pink-box animate-box">
+            <h3>WELCOME !</h3>
+            <p>Welcome to Spring Bliss Bakery, where the aroma of fresh-baked love fills the air! Every treat we create is a little piece of joy, crafted with care to brighten your day. Step into our world of sweetness and let us sprinkle a little magic into your life—one bite at a time.</p>
+        </div>
+
+        <!-- Right Box -->
+        <div class="pink-box animate-box">
+            <h3>LIMITED EDITIONS</h3>
+            <p>🍪 Seasonal Delights Are Here! 🌟 Try our exclusive holiday specials, including Gingerbread Cookies and Peppermint Cupcakes. Available for a limited time only! Order now and make your celebrations extra sweet.</p>
+        </div>
+    </div>
+</section>
+    
+    <section id="menu" class="section menu">
+        <h2>Our Menu</h2>
+        <p>Discover our delicious pastries, cakes, and more!</p>
+    </section>
+
+    <section id="review" class="section review">
+        <h2>Customer Reviews</h2>
+        <p>See what our customers have to say about us!</p>
+    </section>
+
+    <section id="about-us" class="section about-us">
+        <div class="part about-1">
+            <h3>Our Story</h3>
+            <p>Spring Bliss Bakery was founded with the love of baking and sharing joy.</p>
+        </div>
+        <div class="part about-2">
+            <h3>Our Values</h3>
+            <p>We believe in quality, community, and creativity.</p>
+        </div>
+        <div class="part about-3">
+            <h3>Meet the Team</h3>
+            <p>Our talented bakers bring passion to every creation.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>Visit Us</h3>
+            <p>123 Bakery Lane<br>Pastry City, Sweetland</p>
+            <p>Email: hello@springblissbakery.com</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

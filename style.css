@@ -1,0 +1,257 @@
+/* Navbar styling */
+.navbar {
+    background-color: #ffb6b9;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar ul li a[href="#contact"] {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Section styling */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.home {
+    background-color: #fde2e4;
+}
+
+.menu {
+    background-color: #fff1e6;
+}
+
+.review {
+    background-color: #fde2e4;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.about-1 {
+    background-color: #d0e7e2;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.about-2 {
+    background-color: #ffd7dc;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.about-3 {
+    background-color: #fff7f0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-form {
+    flex: 3;
+    background-color: #fde2e4;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #f29497;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+/* Home Section */
+.home {
+    background-color: #fde2e4;
+    text-align: center;
+    padding: 20px;
+    height: 800px;
+    font-family: 'Arial', sans-serif;
+}
+
+.home p {
+    color: #6a4a3c; /* Subtle text color */
+    font-size: 1.3rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.picture-home {
+    width: 1400px;
+    height: 600px;
+    margin-top: 10px;
+    text-align: center;
+    background-image: url('foods/homee.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    border-radius: 30px; /* Makes the corners rounder */
+    overflow: hidden; /* Ensures content doesn't "bleed" outside rounded corners */
+}
+h1 {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 100px;
+    margin: 2px;
+    margin-top: -50px;
+    color: #bb7035;
+}
+/* Pink Box Container */
+.pink-box-container {
+    display: flex;
+    justify-content: space-around; /* Bring boxes slightly closer together */
+    position: absolute;
+    bottom: 70px; /* Move boxes higher by 1px (was 20px before) */
+    left: 0;
+    width: 100%;
+    padding: 0 60px; /* Adjust padding to fine-tune distance from edges */
+    box-sizing: border-box;
+}
+
+  
+  /* Individual Pink Boxes */
+  .pink-box {
+    background-color: rgba(255, 200, 210, 0.7); /* Lighter pink */
+    padding: 20px;
+    border-radius: 20px; /* Adjust this value for rounder sides */
+    width: 42%;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styles */
+  .pink-box h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #7d4f30; /* Slight brown text for contrast */
+    font-family: 'Georgia', serif;
+  }
+  
+ /* Paragraph Styles */
+.pink-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+    font-weight: bold; /* Makes the text bold */
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf3f5; /* Light pastel background */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8bfbf; /* Soft pink color for the navbar */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7d4f30; /* Soft brown color */
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+}
+
+/* Nav Links Styling */
+.nav-links {
+    list-style: none;
+    display: fixed;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Dark gray text color */
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hover Effects for Links */
+.nav-links a:hover {
+    color: #7d4f30; /* Soft brown on hover */
+    border-bottom: 2px solid #7d4f30;
+}
+
+/* Responsive Navbar for Small Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+}

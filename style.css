@@ -251,8 +251,10 @@ h1 {
     height: 300px; /* Slightly larger than the image */
     background-color: #ffb6b9; /* Pink circle */
     border-radius: 50%; /* Makes the background a circle */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
     z-index: 1; /* Behind the image */
 }
+
 
 .menu-image img {
     position: relative;
@@ -336,16 +338,21 @@ h1 {
 .dessert-gallery img {
     width: 240px; /* Increased image size */
     height: 190px; /* Adjusted proportionally */
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #d4af37; /* Golden border */
+    padding: 5px; /* Add padding inside the border */
+    background-color: #fff; /* Optional: White background behind the image */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animations */
 }
 
 .dessert-gallery img:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    border-color: #ffd700; /* Brighter gold on hover */
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

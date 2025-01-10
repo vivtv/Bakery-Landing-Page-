@@ -218,18 +218,13 @@ h1 {
     color: #555;
     font-weight: bold; /* Makes the text bold */
 }
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fdf3f5; /* Light pastel background */
-}
 /* General Section Styling */
 .menu-container {
     display: flex;
@@ -266,7 +261,14 @@ body {
     border-radius: 50%; /* Makes the image a circle */
     object-fit: cover;
     z-index: 2; /* On top of the background circle */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animations */
 }
+
+.menu-image img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100&display=swap');
 
@@ -280,9 +282,10 @@ body {
 .menu-content h2 {
     font-family: 'EB Garamond', serif; /* Updated to EB Garamond */
     font-weight: 100; /* Thin weight */
-    font-size: 8rem; /* Further increased font size */
+    font-size: 5rem; /* Font size */
     color: #333; /* Ensure the color contrasts well */
-    margin-bottom: 2rem; /* Increased spacing below the header */
+    margin-bottom: 1rem; /* Spacing below the header */
+    margin-top: 2rem; /* Add spacing above the header */
 }
 
 .menu-content ul {
@@ -290,13 +293,25 @@ body {
     padding: 0;
     font-size: 1.5rem; /* Increased font size for list items */
     line-height: 2.5; /* Increased line height for better readability */
+    cursor: pointer; /* Indicate clickable items */
 }
 
 .menu-content ul li {
     position: relative;
-    padding-right: 2rem; /* Increased padding for more spacing */
-    margin-bottom: 1rem; /* Increased margin between list items */
+    padding-bottom: 0.5rem; /* Space between the text and the line */
+    margin-bottom: 1.5rem; /* Space between items */
+    font-size: 1.8rem; /* Text size */
+    font-weight: 400; /* Normal weight */
+    border-bottom: 2px solid #333; /* Add a line below each item */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
+
+.menu-content ul li:hover {
+    color: #e57a57; /* Highlight color on hover */
+    transform: translateY(-2px); /* Subtle upward movement */
+    border-bottom-color: #e57a57; /* Change line color on hover */
+}
+
 
 .menu-content ul li::after {
     content: "→";
@@ -309,14 +324,13 @@ body {
 /* Dessert Gallery Styling - Adjusted Position */
 .dessert-gallery {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap; /* Wrap images for responsiveness */
+    justify-content: center;
+    gap: 1.5rem;
     width: 100%;
     max-width: 1500px; /* Adjusted for larger gallery width */
-    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    margin-top: 0.5rem; /* Reduced space above the gallery */
     padding: 1rem 0;
-    margin-top: 1rem; /* Add space above to move it down */
 }
 
 .dessert-gallery img {
@@ -325,5 +339,47 @@ body {
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover animations */
 }
 
+.dessert-gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .menu-image {
+        width: 250px; /* Adjust image size for smaller screens */
+        height: 250px;
+    }
+
+    .menu-image::before {
+        width: 270px;
+        height: 270px;
+    }
+
+    .menu-content {
+        margin-left: 0;
+        text-align: center; /* Center-align content on smaller screens */
+    }
+
+    .menu-content h2 {
+        font-size: 6rem; /* Reduce font size for smaller screens */
+    }
+
+    .menu-content ul {
+        font-size: 1.3rem; /* Adjust list item size */
+    }
+
+    .dessert-gallery img {
+        width: 200px; /* Reduce image size for smaller screens */
+        height: 160px;
+    }
+}

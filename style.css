@@ -251,10 +251,8 @@ h1 {
     height: 300px; /* Slightly larger than the image */
     background-color: #ffb6b9; /* Pink circle */
     border-radius: 50%; /* Makes the background a circle */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
     z-index: 1; /* Behind the image */
 }
-
 
 .menu-image img {
     position: relative;
@@ -389,4 +387,171 @@ h1 {
         width: 200px; /* Reduce image size for smaller screens */
         height: 160px;
     }
+}
+/* General Styling */
+.review {
+    background-color: #fde2e4;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.review-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-left: 2rem; /* Push the entire container to the right */
+}
+
+/* Left Rectangle Section */
+.review-box {
+    flex: 1;
+    max-width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #f4cccc;
+    height: auto; /* Allow flexible height */
+    min-height: 500px; /* Set a minimum height to make it longer */
+}
+
+.rating-section {
+    margin-bottom: 1rem;
+}
+
+.rating-number {
+    font-size: 3rem;
+    color: #d4af37; /* Faded gold color */
+    margin-bottom: 0.5rem;
+}
+
+.rating-stars {
+    font-size: 2rem;
+    color: #d4af37; /* Faded gold color */
+    letter-spacing: 0.1rem;
+}
+
+.rating-info {
+    font-size: 1rem;
+    color: #555;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #f4cccc;
+    margin: 1.5rem 0;
+}
+
+.quote-section blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.quote-section cite {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.badges-section {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.badges-section img {
+    width: 200px; /* Increase badge image width */
+    height: auto;
+}
+
+/* Right Section */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 1rem; /* Reduced gap between items */
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    text-align: center;
+    border: 2px solid #d4af37; /* Thin golden frame */
+}
+
+.review-card img {
+    width: 100%; /* Ensure images are responsive */
+    max-width: 250px; /* Set a maximum width for the images */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.review-card img:hover {
+    transform: scale(1.1); /* Slightly zoom in the image */
+}
+
+
+.review-card h4 {
+    font-size: 1.2rem; /* Smaller text size for ratings */
+    color: #ffbe0b;
+    margin-bottom: 0.3rem;
+}
+
+.review-card p {
+    font-size: 0.9rem; /* Reduced text size for descriptions */
+    color: #555;
+}
+
+/* Overall Grid Container Adjustments */
+.review-grid-container {
+    flex: 2;
+    padding: 1rem; /* Adjusted padding around grid */
+}
+
+.review-grid-heading {
+    font-size: 1.8rem; /* Slightly smaller heading */
+    color: #e63946;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    color: #333;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #000;
 }

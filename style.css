@@ -85,13 +85,12 @@
     text-align: center;
     padding: 2rem;
 }
+.menu {
+    background-color: #fff1e6;
+}
 
 .home {
     background-color: #fde2e4;
-}
-
-.menu {
-    background-color: #fff1e6;
 }
 
 .review {
@@ -230,4 +229,99 @@ h1 {
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fdf3f5; /* Light pastel background */
+}
+/* General Section Styling */
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+}
+
+/* Circular Image with Offset Background */
+.menu-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.menu-image::before {
+    content: "";
+    position: absolute;
+    top: 10px; /* Slight vertical offset */
+    left: 10px; /* Slight horizontal offset */
+    width: 320px; /* Slightly larger than the image */
+    height: 300px; /* Slightly larger than the image */
+    background-color: #ffb6b9; /* Pink circle */
+    border-radius: 50%; /* Makes the background a circle */
+    z-index: 1; /* Behind the image */
+}
+
+.menu-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover;
+    z-index: 2; /* On top of the background circle */
+}
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Menu Content Styling */
+.menu-content {
+    flex: 1;
+    margin-left: 6rem; /* Pushes the content further to the right */
+    text-align: left;
+}
+
+.menu-content h2 {
+    font-family: 'Montserrat', sans-serif; /* Updated to Montserrat with proper fallback */
+    font-size: 6rem; /* Increased font size */
+    color: #333; /* Ensure the color contrasts well */
+    margin-bottom: 1.5rem; /* Add spacing below the header */
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.menu-content ul li {
+    position: relative;
+    padding-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-content ul li::after {
+    content: "→";
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Dessert Gallery Styling - Single Line */
+.dessert-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1400px; /* Adjusted for larger gallery width */
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    padding: 1rem 0;
+}
+
+.dessert-gallery img {
+    width: 200px; /* Increased image size */
+    height: 180px; /* Adjusted proportionally */
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

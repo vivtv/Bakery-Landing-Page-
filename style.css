@@ -267,9 +267,8 @@ body {
     object-fit: cover;
     z-index: 2; /* On top of the background circle */
 }
-
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100&display=swap');
 
 /* Menu Content Styling */
 .menu-content {
@@ -279,7 +278,8 @@ body {
 }
 
 .menu-content h2 {
-    font-family: 'Montserrat', sans-serif; /* Updated to Montserrat with proper fallback */
+    font-family: 'EB Garamond', serif; /* Updated to EB Garamond */
+    font-weight: 100; /* Thin weight */
     font-size: 6rem; /* Increased font size */
     color: #333; /* Ensure the color contrasts well */
     margin-bottom: 1.5rem; /* Add spacing below the header */

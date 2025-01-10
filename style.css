@@ -13,7 +13,7 @@
 
 /* Logo Styling */
 .navbar .logo {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #7d4f30; /* Soft brown color */
     font-family: 'Georgia', serif;
@@ -270,58 +270,60 @@ body {
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100&display=swap');
 
-/* Menu Content Styling */
+/* Menu Content Styling - Enlarged */
 .menu-content {
     flex: 1;
-    margin-left: 6rem; /* Pushes the content further to the right */
+    margin-left: 8rem; /* Increased margin to push content further right */
     text-align: left;
 }
 
 .menu-content h2 {
     font-family: 'EB Garamond', serif; /* Updated to EB Garamond */
     font-weight: 100; /* Thin weight */
-    font-size: 6rem; /* Increased font size */
+    font-size: 8rem; /* Further increased font size */
     color: #333; /* Ensure the color contrasts well */
-    margin-bottom: 1.5rem; /* Add spacing below the header */
+    margin-bottom: 2rem; /* Increased spacing below the header */
 }
 
 .menu-content ul {
     list-style: none;
     padding: 0;
-    font-size: 1.2rem;
-    line-height: 2;
+    font-size: 1.5rem; /* Increased font size for list items */
+    line-height: 2.5; /* Increased line height for better readability */
 }
 
 .menu-content ul li {
     position: relative;
-    padding-right: 1.5rem;
-    margin-bottom: 0.5rem;
+    padding-right: 2rem; /* Increased padding for more spacing */
+    margin-bottom: 1rem; /* Increased margin between list items */
 }
 
 .menu-content ul li::after {
     content: "→";
     position: absolute;
     right: 0;
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increased arrow size */
     color: #333;
 }
 
-/* Dessert Gallery Styling - Single Line */
+/* Dessert Gallery Styling - Adjusted Position */
 .dessert-gallery {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
     width: 100%;
-    max-width: 1400px; /* Adjusted for larger gallery width */
+    max-width: 1500px; /* Adjusted for larger gallery width */
     overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
     padding: 1rem 0;
+    margin-top: 1rem; /* Add space above to move it down */
 }
 
 .dessert-gallery img {
-    width: 200px; /* Increased image size */
-    height: 180px; /* Adjusted proportionally */
+    width: 240px; /* Increased image size */
+    height: 190px; /* Adjusted proportionally */
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+

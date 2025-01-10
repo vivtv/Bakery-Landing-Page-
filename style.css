@@ -1,38 +1,80 @@
-/* Navbar styling */
+/* Navbar Styling */
 .navbar {
-    background-color: #ffb6b9;
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Sticks the navbar to the top of the viewport */
+    z-index: 1000; /* Ensures the navbar stays above other elements */
+    background-color: #ffb6b9; /* Light pink background */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
 
+/* Logo Styling */
 .navbar .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    color: #7d4f30; /* Soft brown color */
+    font-family: 'Georgia', serif;
+    cursor: pointer;
 }
 
-.navbar ul {
+/* Nav Links Styling */
+.navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 20px; /* Space between links */
     margin: 0;
     padding: 0;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+/* Nav Links - Individual Items */
+.navbar .nav-links li {
+    margin: 0;
 }
 
-.navbar ul li a[href="#contact"] {
+/* Nav Links - Anchor Tags */
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333; /* Dark gray text color */
+    font-size: 1rem; /* Adjusted font size for better visibility */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Highlighted "Contact" Link */
+.navbar .nav-links a[href="#contact"] {
     background-color: black;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
 
+/* Hover Effects for Links */
+.navbar .nav-links a:hover {
+    color: #7d4f30; /* Soft brown on hover */
+    border-bottom: 2px solid #7d4f30;
+}
+
+/* Responsive Navbar for Small Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 1rem; /* Larger font size for small screens */
+    }
+}
 /* Section styling */
 .section {
     height: 100vh;
@@ -188,70 +230,4 @@ h1 {
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fdf3f5; /* Light pastel background */
-}
-
-/* Navbar Styling */
-.navbar {
-    display: fixed;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8bfbf; /* Soft pink color for the navbar */
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    z-index: 1000;
-}
-
-/* Logo Styling */
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #7d4f30; /* Soft brown color */
-    font-family: 'Georgia', serif;
-    cursor: pointer;
-}
-
-/* Nav Links Styling */
-.nav-links {
-    list-style: none;
-    display: fixed;
-    gap: 20px;
-}
-
-.nav-links li {
-    margin: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333; /* Dark gray text color */
-    font-size: 0.8rem;
-    font-weight: 400;
-    padding: 5px 10px;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-/* Hover Effects for Links */
-.nav-links a:hover {
-    color: #7d4f30; /* Soft brown on hover */
-    border-bottom: 2px solid #7d4f30;
-}
-
-/* Responsive Navbar for Small Screens */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .nav-links a {
-        font-size: 1rem;
-    }
 }

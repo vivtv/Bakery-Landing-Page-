@@ -54,7 +54,7 @@ const reviews = [
     "Best croissant ever! Pure morning happiness with every flaky, buttery bite. The texture was perfect—crispy on the outside, soft and airy on the inside. Paired with coffee, it was the ideal way to start the day",
     "Colorful pastry that tastes as good as it looks! The vibrant design caught my eye, but the flavor sealed the deal. It was soft, rich, and had a unique sweetness that felt magical. A real treat for both the eyes and the palate.",
     "Lovely cake and even better memories. We spent hours laughing and enjoying the beautiful ambiance of the bakery. The cake was light, fluffy, and perfectly frosted—a dessert that brought everyone together in joy",
-    "Delicious macarons with the sweetest smiles! The chef’s passion truly shines through in these delightful treats. Each macaron was perfectly crafted with a delicate shell and creamy filling. The combination of flavors was irresistible!"
+    "Delicious macaroons with the sweetest smiles! The chef’s passion truly shines through in these delightful treats. Each macaron was perfectly crafted with a delicate shell and creamy filling. The combination of flavors was irresistible!"
 ];
 
 // DOM Elements
@@ -82,3 +82,10 @@ window.addEventListener("click", (event) => {
         modal.style.display = "none";
     }
 });
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+v

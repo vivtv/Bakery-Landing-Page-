@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: visible;
 }
 
 /* Logo Styling */
@@ -567,27 +568,32 @@ hr {
 /* General Styling for Sections */
 .part {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 3fr; /* Two-column layout */
     gap: 1rem;
     padding: 2rem; /* Space within each section */
     border-radius: 0; /* Remove border radius */
 }
 
+/* Blue Section - Story */
 .about-story {
     background-color: #d0e7e2; /* Blue background */
-    padding: 5rem 2rem 2rem; /* Reduce bottom padding while keeping top and sides the same */
+    padding: 5rem 3rem 2rem; /* Adjust padding to move the content slightly to the right */
     margin-top: 2rem; /* Extra spacing above the section */
     text-align: right; /* Right-align content */
 }
 
-.about-story h1, .about-story p {
+.about-story h1 {
+    font-family: 'Impact', sans-serif; /* Alternative to Norwester */
+    font-weight: bold; /* Make text bold */
+    font-size: 3rem; /* Increase font size */
+    line-height: 1.2; /* Adjust line height */
     margin: 0;
-    font-size: 2rem; /* Larger title */
-    line-height: 1.5; /* Improve spacing for readability */
 }
 
 .about-story p {
+    font-family: Arial, sans-serif; /* Default sans-serif for consistency */
     font-size: 1.25rem; /* Larger paragraph text */
+    margin: 0;
 }
 
 .about-story .images {
@@ -598,7 +604,7 @@ hr {
 }
 
 .about-story .images img {
-    width: 70%; /* Smaller size for images */
+    width: 80%; /* Adjust image size */
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -608,18 +614,22 @@ hr {
 /* Pink Section - Inspiration */
 .about-inspiration {
     background-color: #ffd7dc; /* Pink background */
-    padding: 2rem 2rem; /* Add horizontal padding to create gaps on the sides */
+    padding: 2rem 3rem; /* Adjust padding to move content slightly to the right */
     text-align: left; /* Left-align content */
 }
 
-.about-inspiration h1, .about-inspiration p {
+.about-inspiration h1 {
+    font-family: 'Arial Black', Arial, sans-serif; /* Alternative to Canva Sans */
+    font-weight: bold; /* Make text bold */
+    font-size: 4rem; /* Slightly larger font size */
+    line-height: 1.2; /* Adjust line height */
     margin: 0;
-    font-size: 2rem; /* Larger title */
-    line-height: 1.5; /* Improve spacing for readability */
 }
 
 .about-inspiration p {
+    font-family: Arial, sans-serif; /* Default sans-serif for consistency */
     font-size: 1.25rem; /* Larger paragraph text */
+    margin: 0;
 }
 
 .about-inspiration .images {
@@ -630,7 +640,7 @@ hr {
 }
 
 .about-inspiration .images img {
-    width: 80%; /* Smaller size for pink section images */
+    width: 80%; /* Adjust image size */
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -640,29 +650,44 @@ hr {
 /* Yellow Section - Qualities */
 .qualities {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0; /* Remove gaps to avoid space between sections */
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns for all qualities */
+    gap: 2rem; /* Space between columns */
     background-color: #fff7f0; /* Yellow-ish background */
-    padding: 2rem 0; /* Padding only vertically */
+    padding: 2rem; /* Uniform padding around the section */
+    text-align: center; /* Center-align the text */
 }
 
-.quality {
-    padding: 1rem;
-    border-radius: 0; /* Remove border radius */
+.qualities h1 {
+    font-family: 'Arial Black', Arial, sans-serif; /* Bold header font */
+    font-weight: bold;
+    font-size: 2rem; /* Smaller font size for the header */
+    line-height: 1.2;
+    margin: 0 0 1rem; /* Add some spacing below the header */
 }
 
-.quality img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 0.5rem;
+.qualities p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* Smaller font size for paragraph text */
+    margin: 0;
 }
+
+.qualities .images {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center the image and text */
+    gap: 0.5rem; /* Space between image and text */
+}
+
+.qualities .images img {
+    width: 6px; /* Adjust image size for better fit */
+    height: 6px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Full Width for Each Section */
 .part,
 .qualities {
     width: 100%; /* Ensure sections span the full width */
 }
-
-
-

@@ -122,31 +122,6 @@
     background-color: #fde2e4;
 }
 
-.about-us {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 2rem;
-}
-
-.about-1 {
-    background-color: #d0e7e2;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-.about-2 {
-    background-color: #ffd7dc;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-.about-3 {
-    background-color: #fff7f0;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
 .contact {
     display: flex;
     flex-direction: row;
@@ -580,3 +555,114 @@ hr {
 .close-button:hover {
     color: #000;
 }
+.about-us {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 0; /* Ensure no gaps between sections within about-us */
+    padding: 0; /* Remove padding around the container */
+    margin: -2rem 0 0; /* Move the section up slightly by adding a negative margin */
+    width: 100vw; /* Ensure it spans the full viewport width */
+}
+
+/* General Styling for Sections */
+.part {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    padding: 2rem; /* Space within each section */
+    border-radius: 0; /* Remove border radius */
+}
+
+.about-story {
+    background-color: #d0e7e2; /* Blue background */
+    padding: 5rem 2rem 2rem; /* Reduce bottom padding while keeping top and sides the same */
+    margin-top: 2rem; /* Extra spacing above the section */
+    text-align: right; /* Right-align content */
+}
+
+.about-story h1, .about-story p {
+    margin: 0;
+    font-size: 2rem; /* Larger title */
+    line-height: 1.5; /* Improve spacing for readability */
+}
+
+.about-story p {
+    font-size: 1.25rem; /* Larger paragraph text */
+}
+
+.about-story .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images in one row */
+    gap: 1rem;
+    margin-top: 2rem; /* Keep images slightly below the text */
+}
+
+.about-story .images img {
+    width: 70%; /* Smaller size for images */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-self: center; /* Center the images */
+}
+
+/* Pink Section - Inspiration */
+.about-inspiration {
+    background-color: #ffd7dc; /* Pink background */
+    padding: 2rem 2rem; /* Add horizontal padding to create gaps on the sides */
+    text-align: left; /* Left-align content */
+}
+
+.about-inspiration h1, .about-inspiration p {
+    margin: 0;
+    font-size: 2rem; /* Larger title */
+    line-height: 1.5; /* Improve spacing for readability */
+}
+
+.about-inspiration p {
+    font-size: 1.25rem; /* Larger paragraph text */
+}
+
+.about-inspiration .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.about-inspiration .images img {
+    width: 80%; /* Smaller size for pink section images */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-self: center; /* Center the images */
+}
+
+/* Yellow Section - Qualities */
+.qualities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; /* Remove gaps to avoid space between sections */
+    text-align: center;
+    background-color: #fff7f0; /* Yellow-ish background */
+    padding: 2rem 0; /* Padding only vertically */
+}
+
+.quality {
+    padding: 1rem;
+    border-radius: 0; /* Remove border radius */
+}
+
+.quality img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+/* Full Width for Each Section */
+.part,
+.qualities {
+    width: 100%; /* Ensure sections span the full width */
+}
+
+
+

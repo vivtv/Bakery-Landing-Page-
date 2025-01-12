@@ -726,39 +726,50 @@ hr {
     margin-bottom: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100&display=swap');
+
 .footer-text {
-    font-size: 4rem; /* Increased size to make it stand out */
-    font-weight: bold;
+    font-size: 4.3rem; /* Keeps the size to make it stand out */
+    font-weight: 100; /* Sets the text to thin */
+    font-family: 'Playfair Display', serif; /* Applies the Playfair Display font */
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
     line-height: 1.2;
 }
 
+
 .footer-info {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 40px;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: flex-start;
+    gap: 50px; /* Adds a gap between "Everyday" and "Contacts" */
+    margin-right: 100px; /* Adjust spacing from the edge */
+    padding-top: 20px; /* Adds some space above */
+    width: 90%; /* Ensures content aligns closer to the right edge */
 }
 
-.footer-everyday, .footer-contacts {
+.footer-section .footer-left,
+.footer-section .footer-right {
+    text-align: left; /* Aligns text properly */
     font-size: 1rem;
-    line-height: 1.5;
+    color: #fff;
+    line-height: 1.6; /* Adjusts spacing between lines */
 }
 
-.footer-everyday p, .footer-contacts p {
-    margin: 0;
+.footer-left {
+    order: 1; /* Ensures "Everyday" appears first */
 }
 
-.footer-everyday strong, .footer-contacts strong {
-    color: #ffffff;
+.footer-right {
+    order: 2; /* Ensures "Contacts" appears second */
 }
 
-.copyright {
-    position: absolute;
-    bottom: 10px;
-    left: 40px;
-    font-size: 0.9rem;
-    color: #ffffff;
+.rights-reserved {
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: left;
+    margin-left: 50px; /* Adjust to position towards the left */
+    margin-top: 30px; /* Adds more spacing below the footer info */
+    padding-bottom: 10px; /* Creates a cushion at the very bottom */
 }

@@ -638,7 +638,6 @@ hr {
     transform: translateX(40px); /* Starting position for animation */
 }
 
-
 /* Paragraph Styling */
 .part .text p {
     font-family: 'Roboto', sans-serif; /* Apply Roboto font */
@@ -653,4 +652,113 @@ hr {
 
 .images img:hover {
     transform: scale(1.1); /* Zoom in slightly */
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+.light-pink-section {
+    flex: 3; /* 3/5 of the screen */
+    background-color: #ffe3e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content near the top */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.contact-heading {
+    font-size: 3.5rem;
+    color: #a56c3c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 150px; /* Adjust this value to move it lower */
+}
+
+
+.dark-pink-section {
+    flex: 2; /* 2/5 of the screen */
+    background-color: #f29497;
+    padding: 30px 40px;
+    position: relative;
+    color: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contact-form input {
+    width: 400px; /* Longer width */
+    height: 40px; /* Shorter height */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form .subscribe-button {
+    width: 200px; /* Longer width */
+    height: 40px; /* Shorter height */
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .subscribe-button:hover {
+    background-color: #333;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 4rem; /* Increased size to make it stand out */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.footer-everyday, .footer-contacts {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-everyday p, .footer-contacts p {
+    margin: 0;
+}
+
+.footer-everyday strong, .footer-contacts strong {
+    color: #ffffff;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    font-size: 0.9rem;
+    color: #ffffff;
 }

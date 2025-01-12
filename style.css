@@ -556,93 +556,101 @@ hr {
 .close-button:hover {
     color: #000;
 }
-.about-us {
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    gap: 0; /* Ensure no gaps between sections within about-us */
-    padding: 0; /* Remove padding around the container */
-    margin: -2rem 0 0; /* Move the section up slightly by adding a negative margin */
-    width: 100vw; /* Ensure it spans the full viewport width */
+/* General Styles for the About Us Section */
+.section.about-us {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
-/* General Styling for Sections */
+/* Shared Styles for Both Parts */
 .part {
-    display: grid;
-    grid-template-columns: 2fr 3fr; /* Two-column layout */
-    gap: 1rem;
-    padding: 2rem; /* Space within each section */
-    border-radius: 0; /* Remove border radius */
+    display: flex; /* Align images and text side-by-side */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 2rem;
+    gap: 1.5rem; /* Space between text and images */
+    text-align: left; /* Default left-align text */
 }
 
-/* Blue Section - Story */
+/* Blue Background for 'Our Story' */
 .about-story {
-    background-color: #d0e7e2; /* Blue background */
-    padding: 5rem 3rem 2rem; /* Adjust padding to move the content slightly to the right */
-    margin-top: 2rem; /* Extra spacing above the section */
-    text-align: right; /* Right-align content */
+    background-color: #d0e7e2; /* Light blue */
+    padding-top: 10.5rem; /* Add space above */
+    padding-bottom: 2rem; /* Keep existing padding for consistency */
+    margin-top: -2rem; /* Adjust for overlapping effect */
 }
 
-.about-story h1 {
-    font-family: 'Impact', sans-serif; /* Alternative to Norwester */
-    font-weight: bold; /* Make text bold */
-    font-size: 3rem; /* Increase font size */
-    line-height: 1.2; /* Adjust line height */
-    margin: 0;
+/* Right-align text in the blue section */
+.about-story .text {
+    text-align: right;
 }
 
-.about-story p {
-    font-family: Arial, sans-serif; /* Default sans-serif for consistency */
-    font-size: 1.25rem; /* Larger paragraph text */
-    margin: 0;
-}
-
-.about-story .images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two images in one row */
-    gap: 1rem;
-    margin-top: 2rem; /* Keep images slightly below the text */
-}
-
-.about-story .images img {
-    width: 80%; /* Adjust image size */
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    justify-self: center; /* Center the images */
-}
-
-/* Pink Section - Inspiration */
+/* Pink Background for 'Our Inspiration' */
 .about-inspiration {
-    background-color: #ffd7dc; /* Pink background */
-    padding: 2rem 3rem; /* Adjust padding to move content slightly to the right */
-    text-align: left; /* Left-align content */
+    background-color: #ffd7dc; /* Light pink */
+    padding-top: 2rem; /* Keep existing padding for consistency */
+    padding-bottom: 10.5rem; /* Add space below */
+    margin-bottom: -2rem; /* Adjust for overlapping effect */
 }
 
-.about-inspiration h1 {
-    font-family: 'Arial Black', Arial, sans-serif; /* Alternative to Canva Sans */
-    font-weight: bold; /* Make text bold */
-    font-size: 4rem; /* Slightly larger font size */
-    line-height: 1.2; /* Adjust line height */
-    margin: 0;
+/* Text Styling */
+.part .text {
+    max-width: 50%; /* Restrict text width */
+    padding: 1rem;
 }
 
-.about-inspiration p {
-    font-family: Arial, sans-serif; /* Default sans-serif for consistency */
-    font-size: 1.25rem; /* Larger paragraph text */
-    margin: 0;
+/* Image Styling */
+.part .images {
+    display: flex;
+    flex-wrap: wrap; /* Ensure images wrap on smaller screens */
+    gap: 1rem; /* Space between images */
+    justify-content: center;
 }
 
-.about-inspiration .images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    align-items: center;
-}
-
-.about-inspiration .images img {
-    width: 80%; /* Adjust image size */
+.part .images img {
+    width: 250px; /* Increased image width */
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    justify-self: center; /* Center the images */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Add slight shadow for depth */
+    border: 3.5px solid #d4af37; /* Thin golden frame */
+}
+
+/* Title Styling for 'Our Story' and 'Our Inspiration' */
+.part .text h3 {
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
+    font-size: 3rem; /* Keep the font size large and elegant */
+    font-weight: 300; /* Maintain the thin font weight */
+    margin-bottom: 2rem; /* Add spacing below the h3 */
+    overflow: hidden; /* Hide overflowing animated elements */
+    display: inline-block; /* Ensure inline-block for animation alignment */
+    position: relative; /* For animation positioning */
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+/* Styling for animated letters */
+.ml12 .letter {
+    display: inline-block; /* Treat each letter as a block for animation */
+    opacity: 0; /* Default opacity for animation start */
+    transform: translateX(40px); /* Starting position for animation */
+}
+
+
+/* Paragraph Styling */
+.part .text p {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1.5rem; /* Optional: Add space above the paragraph if needed */
+}
+/* Hover Zoom-In Effect */
+.images img {
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+.images img:hover {
+    transform: scale(1.1); /* Zoom in slightly */
 }

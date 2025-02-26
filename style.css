@@ -397,7 +397,7 @@ h1 {
 .review {
     background-color: #fde2e4;
     padding: 2rem;
-    padding-left: 5rem;
+    padding-left: 10rem;
     font-family: 'Arial', sans-serif;
 }
 
@@ -405,8 +405,7 @@ h1 {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-    margin-left: 5rem; /* Push the entire container to the right */
-    transform: translateX(50px);
+    margin-left: 15rem; /* Push the entire container to the right */
 }
 
 /* Left Rectangle Section */

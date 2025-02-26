@@ -405,7 +405,7 @@ h1 {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-    margin-left: 15rem; /* Push the entire container to the right */
+    margin-left: 6rem; /* Push the entire container to the right */
 }
 
 /* Left Rectangle Section */
@@ -566,7 +566,7 @@ hr {
     display: flex;
     flex-direction: column; /* Stack sections vertically */
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -598,7 +598,7 @@ hr {
 .about-inspiration {
     background-color: #ffd7dc; /* Light pink */
     padding-top: 2rem; /* Keep existing padding for consistency */
-    padding-bottom: 10.5rem; /* Add space below */
+    padding-bottom: 15rem; /* Add space below */
     margin-bottom: -2rem; /* Adjust for overlapping effect */
 }
 

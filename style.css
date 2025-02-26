@@ -166,8 +166,8 @@
     margin: 0 auto;
 }
 .picture-home {
-    width: 1400px;
-    height: 600px;
+    width: 1700px;
+    height: 650px;
     margin-top: 10px;
     text-align: center;
     background-image: url('foods/homee.jpg'); /* Add your image path here */
@@ -181,7 +181,6 @@ h1 {
     font-family: 'Times New Roman', sans-serif;
     font-size: 100px;
     margin: 2px;
-    margin-top: -50px;
     color: #bb7035;
 }
 /* Pink Box Container */
@@ -189,7 +188,7 @@ h1 {
     display: flex;
     justify-content: space-around; /* Bring boxes slightly closer together */
     position: absolute;
-    bottom: 70px; /* Move boxes higher by 1px (was 20px before) */
+    bottom: 150px; /* Move boxes higher by 1px (was 20px before) */
     left: 0;
     width: 100%;
     padding: 0 60px; /* Adjust padding to fine-tune distance from edges */
@@ -398,6 +397,7 @@ h1 {
 .review {
     background-color: #fde2e4;
     padding: 2rem;
+    padding-left: 5rem;
     font-family: 'Arial', sans-serif;
 }
 
@@ -405,7 +405,8 @@ h1 {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-    margin-left: 2rem; /* Push the entire container to the right */
+    margin-left: 5rem; /* Push the entire container to the right */
+    transform: translateX(50px);
 }
 
 /* Left Rectangle Section */

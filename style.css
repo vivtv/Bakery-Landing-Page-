@@ -711,7 +711,7 @@ hr {
 .contact-form .subscribe-button {
     width: 200px; /* Longer width */
     height: 40px; /* Shorter height */
-    background-color: black;
+    background-color: #a56c3c;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -721,7 +721,7 @@ hr {
 }
 
 .contact-form .subscribe-button:hover {
-    background-color: #333;
+    background-color: #f09b56;
 }
 
 .footer-content {
@@ -786,7 +786,7 @@ hr {
 }
 
 .logo img {
-    height: 50px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
     width: auto;
 }
 

@@ -684,13 +684,130 @@ hr {
     margin-top: 150px; /* Adjust this value to move it lower */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100&display=swap');
 
+/* Footer Section */
 .dark-pink-section {
-    flex: 2; /* 2/5 of the screen */
     background-color: #f29497;
-    padding: 30px 40px;
-    position: relative;
+    padding: 40px 60px;
     color: #ffffff;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Footer Heading */
+.footer-text {
+    font-size: 4.3rem; 
+    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links ul li {
+    display: inline;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #a56c3c;
+}
+
+/* Footer Info (Single Row) */
+.footer-info {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 10px;
+}
+
+.footer-info p {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Subscribe Button */
+.contact-form .subscribe-button {
+    width: 200px;
+    height: 40px;
+    background-color: #a56c3c;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .subscribe-button:hover {
+    background-color: #8b5630;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+
+    .contact-form input {
+        width: 100%;
+    }
+
+    .contact-form .subscribe-button {
+        width: 100%;
+    }
 }
 
 .contact-form {
@@ -721,7 +838,7 @@ hr {
 }
 
 .contact-form .subscribe-button:hover {
-    background-color: #f09b56;
+    background-color: #a56c3c;
 }
 
 .footer-content {
@@ -760,23 +877,6 @@ hr {
     font-size: 1rem;
     color: #fff;
     line-height: 1.6; /* Adjusts spacing between lines */
-}
-
-.footer-left {
-    order: 1; /* Ensures "Everyday" appears first */
-}
-
-.footer-right {
-    order: 2; /* Ensures "Contacts" appears second */
-}
-
-.rights-reserved {
-    font-size: 0.8rem;
-    color: #fff;
-    text-align: left;
-    margin-left: 50px; /* Adjust to position towards the left */
-    margin-top: 30px; /* Adds more spacing below the footer info */
-    padding-bottom: 10px; /* Creates a cushion at the very bottom */
 }
 
 .logo {

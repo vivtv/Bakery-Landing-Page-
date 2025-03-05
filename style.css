@@ -895,3 +895,15 @@ hr {
     font-weight: bold;
     color: #333; /* Adjust color as needed */
 }
+
+/* Copyright Text */
+.copyright {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    width: 100%;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
